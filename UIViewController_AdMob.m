@@ -29,7 +29,7 @@
     GADRequest * request = [GADRequest request];
     
     // load test ad on my iPhone
-    request.testDevices = @[MY_TEST_DEVICE_ID];
+    request.testDevices = @[MY_TEST_DEVICE_ID, kGADSimulatorID];
     
     [bannerView loadRequest: request];
 }
